@@ -1,10 +1,10 @@
 def bubble_sort_by (array)
     i = 0
     length = array.length
-    while i <= length -1
+    while i <= length
         if array[i+1] != nil && array[i] > array[i+1]
             array[i], array[i+1] = array[i+1], array[i]  
-            i=0
+            i=-1
             print array
         end
         i+=1
