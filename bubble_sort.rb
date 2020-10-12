@@ -1,4 +1,4 @@
-def bubble_sort_by(array)
+def bubble_sort(array)
   i = 0
   length = array.length - 2
   while i <= length
@@ -8,14 +8,14 @@ def bubble_sort_by(array)
     end
     i += 1
   end
-  print array
+  array
 end
 
 # first example for number
-bubble_sort_by([9, 7, 8, 4, 2, 1, 3, 5, 6])
+bubble_sort([9, 7, 8, 4, 2, 1, 3, 5, 6])
 
 # Yield
-def bubble_sort(array)
+def bubble_sort_by(array)
   i = 0
   length = array.length - 2
   while i <= length
@@ -25,8 +25,8 @@ def bubble_sort(array)
     end
     i += 1
   end
-  print array
+  array
 end
 
 # second example string's length
-bubble_sort(%w[orange car apple]) { |str1, str2| str1.length - str2.length }
+bubble_sort_by(%w[orange car apple]) { |str1, str2| str1.length - str2.length }
